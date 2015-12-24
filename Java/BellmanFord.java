@@ -1,6 +1,13 @@
 import java.io.*;
 import java.util.*;
+
 public class BellmanFord{
+	/**
+ * Bellman Ford: finds shortest path in graphs with negative edges and possible minimum weight cycles
+ * @param r start node
+ * @param in adjacency list
+ * @return distance to each node from start node
+ */
 	public int[] bellmanFord(int r, ArrayList<HashMap<Integer,Integer>> in){
 	int[] out=new int[in.size()],prev=new int[in.size()];
 	Arrays.fill(out, Integer.MAX_VALUE);
