@@ -27,3 +27,5 @@ public class BellmanFord{
 	return out;//or you can return prev if you so choose
 }
 }
+
+// this is just a test
